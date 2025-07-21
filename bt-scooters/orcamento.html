@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Orçamento | Better</title>
+  <meta name="description" content="Orcamento.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body id="orcamento">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img src="./img/better.svg" alt="Better">
+      </a>
+
+      <nav aria-label="primaria" class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav header-menu normal-font-regular cor-0">
+                            <li class="nav-item"><a href="../scooters.html">Scooters</a>
+                                <div class="sub-menu ">
+                                    <ul>
+                                        <li class="nav-item"><a href="../scooters/scooter-branca.html">Magic White
+                                                Scooter</a></li>
+                                        <li class="nav-item"><a href="../scooters/scooter-azul.html">Cosmic Cyan
+                                                Scooter</a>
+                                        </li>
+                                        <li class="nav-item"><a href="../scooters/scooter-preta.html">Nimbus Dark
+                                                Scooter</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="../seguros.html">Seguros</a></li>
+                            <li class="nav-item"><a href="../contato.html">Contato</a></li>
+                            <div class="login-link">
+                                <li class="nav-item"><a href="../login.html">Entrar</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="titulo-bg">
+      <div class="titulo container">
+
+        <h1 class="big-font-bold cor-0">Solicite um orçamento<span class="cor-p1">.</span></h1>
+        <p class="normal-font-regular cor-5">Cotações no seu email</p>
+      </div>
+    </div>
+
+    <form class="orcamento container" action="./orcamento.html">
+      <div class="orcamento-produto">
+        <h2 class="plus-font-bold cor-5">Scooter ou Seguro?</h2>
+
+        <input type="radio" name="tipo" value="scooter" id="scooter">
+        <label for="scooter">Scooter</label>
+
+        <input type="radio" name="tipo" value="seguro" id="seguro">
+        <label for="seguro">Seguro</label>
+
+        <div class="orcamento-conteudo" id="orcamento-scooter">
+          <h2 class="plus-font-bold cor-5">Escolha a sua</h2>
+
+          <input type="radio" name="produto" value="scooter-branca" id="scooter-branca">
+          <label for="scooter-branca">Magic White Scooter </label>
+
+          <input type="radio" name="produto" value="scooter-azul" id="scooter-azul">
+          <label for="scooter-azul">Cosmic Cyan Scooter </label>
+
+          <input type="radio" name="produto" value="scooter-preta" id="scooter-preta">
+          <label for="scooter-preta">Nimbus Dark Scooter</label>
+        </div>
+
+        <div class="orcamento-conteudo" id="orcamento-seguro">
+          <h2 class="font-1-xs cor-5">Escolha o plano</h2>
+
+          <input type="radio" name="produto" value="urbano" id="urbano">
+          <label for="urbano">Urbano <span>R$ 149</span></label>
+
+          <input type="radio" name="produto" value="Expresso" id="Expresso">
+          <label for="Expresso">Expresso <span>R$ 249</span></label>
+        </div>
+
+      </div>
+
+      <div class="orcamento-dados">
+        <h2 class="plus-font-bold cor-9">dados pessoais</h2>
+
+        <div class="contato-new container1 grid" id="ContactRegistrer">
+          <div class="login__register">
+            <div class="login__area">
+              <form action="" class="login__form">
+                <div class="login__content grid">
+                  <div class="login__group grid">
+
+                    <div class="login__box">
+                      <input type="text" id="name" required placeholder=" " class="login__input">
+                      <label for="name" class="login__label">Nome</label>
+                      <i class="ri-id-card-fill login__icon"></i>
+                    </div>
+
+                    <div class="login__box">
+                      <input type="text" id="lastname" required placeholder=" " class="login__input">
+                      <label for="lastname" class="login__label">Sobrenome</label>
+                      <i class="ri-id-card-fill login__icon"></i>
+                    </div>
+
+                  </div>
+
+                  <div class="login__box">
+                    <input type="text" id="cpf" required placeholder=" " class="login__input">
+                    <label for="cpf" class="login__label">CPF</label>
+                    <i class="ri-id-card-fill login__icon"></i>
+                  </div>
+
+                  <div class="login__box">
+                    <input type="email" id="emailCreate" required placeholder=" " class="login__input">
+                    <label for="emailCreate" class="login__label">Email</label>
+                    <i class="ri-mail-fill login__icon"></i>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="plus-font-bold cor-9 col-2">entrega</h2>
+
+        <div class="contato-new container1 grid" id="ContactRegistrer">
+          <div class="login__register">
+            <div class="login__area">
+              <form action="" class="login__form">
+                <div class="login__content grid">
+
+                  <div class="login__group grid">
+
+                    <div class="login__box">
+                      <input type="text" id="cep" required placeholder=" " class="login__input">
+                      <label for="cep" class="login__label">CEP</label>
+                      <i class="ri-map-pin-2-fill login__icon"></i>
+                    </div>
+
+                    <div class="login__box">
+                      <input type="text" id="numero" required placeholder=" " class="login__input">
+                      <label for="numero" class="login__label">Nº</label>
+                      <i class="ri-map-pin-2-fill login__icon"></i>
+                    </div>
+
+                    <div class="login__box">
+                      <input type="text" id="logradouro" required placeholder=" " class="login__input">
+                      <label for="logradouro" class="login__label">Logradouro</label>
+                      <i class="ri-map-pin-2-fill login__icon"></i>
+                    </div>
+
+                    <div class="login__box">
+                      <input type="text" id="bairro" required placeholder=" " class="login__input">
+                      <label for="bairro" class="login__label">Bairro</label>
+                      <i class="ri-map-pin-2-fill login__icon"></i>
+                    </div>
+
+                    <div class="login__box">
+                      <input type="text" id="cidade" required placeholder=" " class="login__input">
+                      <label for="cidade" class="login__label">Cidade</label>
+                      <i class="ri-map-pin-2-fill login__icon"></i>
+                    </div>
+
+                    <div class="login__box">
+                      <input type="text" id="estado" required placeholder=" " class="login__input">
+                      <label for="estado" class="login__label">Estado</label>
+                      <i class="ri-map-pin-2-fill login__icon"></i>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="login__button">Solicitar orçamento</button>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./img/better.svg" alt="Better">
+      <div class="footer-contato">
+        <h3 class="normal-font-bold cor-0">Contato</h3>
+        <ul class=" normal-font-regular cor-5">
+          <li><a href="tel:+5547999999999">+55 47 9999-9999</a></li>
+          <li><a href="mailto:contato@better.com">contato@better.com</a></li>
+          <li>Rua Ali Perto, 42 - Itoupava Norte</li>
+          <li>Blumenau - SC</li>
+        </ul>
+        <div class="footer-redes">
+          <a href="./">
+            <img src="./img/redes/instagram.svg" alt="instagram">
+          </a>
+
+          <a href="./">
+            <img src="./img/redes/facebook.svg" alt="Facebook">
+          </a>
+
+          <a href="./">
+            <img src="./img/redes/youtube.svg" alt="Youtube">
+          </a>
+        </div>
+      </div>
+      <div class="footer-informacoes">
+        <h3 class="normal-font-bold cor-0">Informações</h3>
+        <nav>
+          <ul class="normal-font-regular cor-5">
+            <li><a href="scooters.html">Scooters</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="login.html">Entrar</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy small-font-regular cor-6">Better © Todos os direitos reservados.</p>
+      <p class="small-font-regular cor-6">Desenvolvido por <img src="./img/logo-desenvolvedores.svg"
+          alt="One Code Desenvolvimento"></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS (inclui Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
